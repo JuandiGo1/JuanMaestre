@@ -21,16 +21,23 @@
       }
     },
     "education": {
+    "english": {
       "degree": "Bachelor’s Degree in Systems Engineering",
       "institution": "Universidad del Norte",
-      "period": "2021 - Present"
+      "period": "2021 - Currently"
     },
+    "spanish": {
+      "degree": "Pregrado en Ingeniería de Sistemas",
+      "institution": "Universidad del Norte",
+      "period": "2021 - Presente"
+    }
+  },
     "experience": [
       {
         "english": {
           "role": "Vice Director of Video Games",
           "organization": "ACM UNINORTE Student Chapter",
-          "period": "2024 - Present",
+          "period": "2024 - Currently",
           "description": "Led event organization at ACM Uninorte, enhancing my skills in assertive communication, teamwork, and leadership while gaining confidence in public speaking and coordinating collaborative activities."
         },
         "spanish": {

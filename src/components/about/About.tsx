@@ -33,7 +33,7 @@ const About: React.FC<{ language: "english" | "spanish" }> = ({ language }) => {
       <div className="mt-10 mb-10 ">
         <DecryptedText
           text={currentTitles.greeting}
-          speed={40}
+          speed={80}
           maxIterations={20}
           sequential={true}
           className="revealed text-6xl font-bold"

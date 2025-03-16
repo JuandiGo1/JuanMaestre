@@ -37,7 +37,7 @@ function App() {
             </div>
           </div>
           <div className="flex items-start justify-center h-full">
-            <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} fov={20} />
+            <Lanyard position={[0, 0, 11]} gravity={[0, -40, 0]} fov={20} />
           </div>
         </div>
         <section className="min-h-screen">
