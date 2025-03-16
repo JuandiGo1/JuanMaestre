@@ -1,6 +1,7 @@
 import React from "react";
 import info from "../../info.json";
 import Card_Education from "./Card_Education";
+import Card_Experience from "./Card_Experience";
 import DecryptedText from "../DecryptedText/DecryptedText";
 import LanguageCard from "./Lenguage";
 
@@ -36,7 +37,7 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
             degree={education.degree}
             institution={education.institution}
             period={education.period}
-            imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBb15zio8gKuIEDJZXkEHyB9pSmOQ7MxZEQ&s"
+            imageUrl={education.logo}
           />
 
           <h2 className="text-4xl text-left font-semibold mt-10 mb-4">
@@ -58,18 +59,19 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-4xl text-left font-semibold mb-4">
+            <i className="fa-solid fa-group-arrows-rotate text-3xl mr-2"></i>
             {language === "english" ? "Experience" : "Experiencia"}
           </h2>
           {experience.map((exp, index) => (
-            <div key={index} className="mb-4">
-              <p className="mb-2">
-                <strong>{exp.role}</strong>
-              </p>
-              <p className="mb-2">{exp.organization}</p>
-              <p className="mb-2">{exp.period}</p>
-              <p>{exp.description}</p>
-            </div>
+            <Card_Experience
+              key={index}
+              role={exp.role}
+              organization={exp.organization}
+              period={exp.period}
+              description={exp.description}
+              logoUrl={exp.logo} 
+            />
           ))}
         </div>
       </div>

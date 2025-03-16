@@ -6,7 +6,7 @@ const Technologies: React.FC<{ language: "english" | "spanish" }> = ({ language 
   const skills = info.skills;
 
   const titles = {
-    english: "Technologies I use",
+    english: "My Technologies ",
     spanish: "Tecnologías que uso"
   };
 
@@ -17,10 +17,10 @@ const Technologies: React.FC<{ language: "english" | "spanish" }> = ({ language 
       <h2 className="text-2xl font-semibold mb-2">{currentTitle}</h2>
       <div className="grid grid-cols-5 gap-4">
         {skills.programming_languages.map((tech, index) => (
-          <Tecnologie key={index} name={tech} />
+          <Tecnologie key={index} name={tech.name} logoUrl={tech.logo} />
         ))}
         {skills.frameworks_and_tools.map((tool, index) => (
-          <Tecnologie key={index} name={tool} />
+          <Tecnologie key={index} name={tool.name} logoUrl={tool.logo} />
         ))}
       </div>
     </div>

@@ -1,113 +1,124 @@
 {
-    "name": "Juan David Maestre",
-    "contact": {
-      "phone": "+57 3177512364",
-      "email": "maestrejull_9@hotmail.com",
-      "linkedin": "https://www.linkedin.com/in/juan-maestre-b9573330a/",
-      "github": "https://github.com/JuandiGo1"
+  "name": "Juan David Maestre",
+  "contact": {
+    "phone": "+57 3177512364",
+    "email": "maestrejull_9@hotmail.com",
+    "linkedin": "https://www.linkedin.com/in/juan-maestre-b9573330a/",
+    "github": "https://github.com/JuandiGo1"
+  },
+  "profile": {
+    "english": {
+      "title": "Systems Engineer Student",
+      "semester": 9,
+      "university": "Universidad del Norte",
+      "description": "Systems Engineering student at Universidad del Norte, currently in the ninth semester, with solid knowledge in software development, web development, and database management. I stand out for my leadership, adaptability, assertive communication, and problem-solving skills. I have participated in academic projects that have strengthened my ability to design and develop efficient solutions, with experience in query optimization, API development, and data management."
     },
-    "profile": {
-      "english": {
-        "title": "Systems Engineer Student",
-        "semester": 9,
-        "university": "Universidad del Norte",
-        "description": "Systems Engineering student at Universidad del Norte, currently in the ninth semester, with solid knowledge in software development, web development, and database management. I stand out for my leadership, adaptability, assertive communication, and problem-solving skills. I have participated in academic projects that have strengthened my ability to design and develop efficient solutions, with experience in query optimization, API development, and data management."
-      },
-      "spanish": {
-        "title": "Estudiante de Ingeniería de Sistemas",
-        "semester": 9,
-        "university": "Universidad del Norte",
-        "description": "Estudiante de Ingeniería de Sistemas en la Universidad del Norte, actualmente en noveno semestre, con sólidos conocimientos en desarrollo de software, desarrollo web y gestión de bases de datos. Me destaco por mi liderazgo, adaptabilidad, comunicación asertiva y habilidades de resolución de problemas. He participado en proyectos académicos que han fortalecido mi capacidad para diseñar y desarrollar soluciones eficientes, con experiencia en optimización de consultas, desarrollo de APIs y gestión de datos."
-      }
-    },
-    "education": {
+    "spanish": {
+      "title": "Estudiante de Ingeniería de Sistemas",
+      "semester": 9,
+      "university": "Universidad del Norte",
+      "description": "Estudiante de Ingeniería de Sistemas en la Universidad del Norte, actualmente en noveno semestre, con sólidos conocimientos en desarrollo de software, desarrollo web y gestión de bases de datos. Me destaco por mi liderazgo, adaptabilidad, comunicación asertiva y habilidades de resolución de problemas. He participado en proyectos académicos que han fortalecido mi capacidad para diseñar y desarrollar soluciones eficientes, con experiencia en optimización de consultas, desarrollo de APIs y gestión de datos."
+    }
+  },
+  "education": {
     "english": {
       "degree": "Bachelor’s Degree in Systems Engineering",
       "institution": "Universidad del Norte",
-      "period": "2021 - Currently"
+      "period": "2021 - Currently",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBb15zio8gKuIEDJZXkEHyB9pSmOQ7MxZEQ&s"
     },
     "spanish": {
       "degree": "Pregrado en Ingeniería de Sistemas",
       "institution": "Universidad del Norte",
-      "period": "2021 - Presente"
+      "period": "2021 - Presente",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBb15zio8gKuIEDJZXkEHyB9pSmOQ7MxZEQ&s"
     }
   },
-    "experience": [
-      {
-        "english": {
-          "role": "Vice Director of Video Games",
-          "organization": "ACM UNINORTE Student Chapter",
-          "period": "2024 - Currently",
-          "description": "Led event organization at ACM Uninorte, enhancing my skills in assertive communication, teamwork, and leadership while gaining confidence in public speaking and coordinating collaborative activities."
-        },
-        "spanish": {
-          "role": "Subdirector de Videojuegos",
-          "organization": "Capítulo Estudiantil ACM UNINORTE",
-          "period": "2024 - Presente",
-          "description": "Lideré la organización de eventos en ACM Uninorte, mejorando mis habilidades en comunicación asertiva, trabajo en equipo y liderazgo, al mismo tiempo que gané confianza en hablar en público y coordinar actividades colaborativas."
-        }
+  "experience": [
+    {
+      "english": {
+        "role": "Vice Director of Video Games",
+        "organization": "ACM UNINORTE Student Chapter",
+        "period": "2024 - Currently",
+        "description": "Led event organization at ACM Uninorte, enhancing my skills in assertive communication, teamwork, and leadership while gaining confidence in public speaking and coordinating collaborative activities.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOoxeCJF1o_EdbW5RiA0nyVr5BkN6xdw74w&s"
       },
-      {
-        "english": {
-          "role": "Programming Tutor (Python)",
-          "organization": "CREE Coders, Uninorte",
-          "period": "2024",
-          "description": "Provided programming tutoring at CREE in Uninorte, strengthening my communication, patience, and teamwork skills, while improving my ability to explain technical concepts and adapt to different learning styles."
-        },
-        "spanish": {
-          "role": "Tutor de Programación (Python)",
-          "organization": "CREE Coders, Uninorte",
-          "period": "2024",
-          "description": "Brindé tutorías de programación en el CREE de Uninorte, fortaleciendo mis habilidades de comunicación, paciencia y trabajo en equipo, al mismo tiempo que mejoré mi capacidad para explicar conceptos técnicos y adaptarme a diferentes estilos de aprendizaje."
-        }
+      "spanish": {
+        "role": "Subdirector de Videojuegos",
+        "organization": "Capítulo Estudiantil ACM UNINORTE",
+        "period": "2024 - Presente",
+        "description": "Lideré la organización de eventos en ACM Uninorte, mejorando mis habilidades en comunicación asertiva, trabajo en equipo y liderazgo, al mismo tiempo que gané confianza en hablar en público y coordinar actividades colaborativas.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOoxeCJF1o_EdbW5RiA0nyVr5BkN6xdw74w&s"
       }
+    },
+    {
+      "english": {
+        "role": "Programming Tutor (Python)",
+        "organization": "CREE Coders, Uninorte",
+        "period": "2024",
+        "description": "Provided programming tutoring at CREE in Uninorte, strengthening my communication, patience, and teamwork skills, while improving my ability to explain technical concepts and adapt to different learning styles.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYtBzTUvonF-NoqfkTZkjsvRPYRsXpGREwvw&s"
+      },
+      "spanish": {
+        "role": "Tutor de Programación (Python)",
+        "organization": "CREE Coders, Uninorte",
+        "period": "2024",
+        "description": "Brindé tutorías de programación en el CREE de Uninorte, fortaleciendo mis habilidades de comunicación, paciencia y trabajo en equipo, al mismo tiempo que mejoré mi capacidad para explicar conceptos técnicos y adaptarme a diferentes estilos de aprendizaje.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYtBzTUvonF-NoqfkTZkjsvRPYRsXpGREwvw&s"
+      }
+    }
+  ],
+  "skills": {
+    "programming_languages": [
+      {"name": "JavaScript", "logo": "https://cdn.simpleicons.org/javascript"},
+      {"name": "TypeScript", "logo": "https://cdn.simpleicons.org/typescript"},
+      {"name": "HTML5", "logo": "https://cdn.simpleicons.org/html5"},
+      {"name": "CSS", "logo": "https://cdn.simpleicons.org/css3"},
+      {"name": "Python", "logo": "https://cdn.simpleicons.org/python"},
+      {"name": "Java", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg"},
+      {"name": "SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"}
     ],
-    "skills": {
-      "programming_languages": ["JavaScript", "TypeScript","HTML5", "CSS", "Python", "Java", "SQL"],
-      "frameworks_and_tools": ["Express.js", "SQL Server", "Oracle SQL", "Git", "Vercel", "Excel", "Power BI", "MongoDB", "Tailwind CSS"],
-      "soft_skills": ["Leadership", "Adaptability", "Problem-solving", "Communication"]
-    },
-    "languages": {
-      "spanish": "Native",
-      "english": "B1"
-    },
-    "projects": [
-      {
-        "english": {
-          "name": "Sabiduría DB",
-          "description": "Web app for an academic institution. Designed the database model and developed the corresponding script.",
-          "repository": "https://github.com/JuandiGo1/Sabiduria-DB"
-        },
-        "spanish": {
-          "name": "Sabiduría DB",
-          "description": "Aplicación web para una institución académica. Diseñé el modelo de base de datos y desarrollé el script correspondiente.",
-          "repository": "https://github.com/JuandiGo1/Sabiduria-DB"
-        }
+    "frameworks_and_tools": [
+      {"name": "Express.js", "logo": "https://cdn.simpleicons.org/express"},
+      {"name": "SQL Server", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"},
+      {"name": "Oracle SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"},
+      {"name": "Git", "logo": "https://cdn.simpleicons.org/git"},
+      {"name": "Vercel", "logo": "https://cdn.simpleicons.org/vercel"},
+      {"name": "Excel", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019–present%29.svg/1200px-Microsoft_Office_Excel_%282019–present%29.svg.png"},
+      {"name": "Power BI", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png"},
+      {"name": "MongoDB", "logo": "https://cdn.simpleicons.org/mongodb"},
+      {"name": "Tailwind CSS", "logo": "https://cdn.simpleicons.org/tailwindcss"}
+    ],
+    "soft_skills": ["Leadership", "Adaptability", "Problem-solving", "Communication"]
+  },
+  "languages": {
+    "spanish": "Native",
+    "english": "B1"
+  },
+  "projects": [
+    {
+      "english": {
+        "name": "Sabiduría DB",
+        "description": "Web app for an academic institution. Designed the database model and developed the corresponding script.",
+        "repository": "https://github.com/JuandiGo1/Sabiduria-DB"
       },
-      {
-        "english": {
-          "name": "Library API",
-          "description": "Web server using Express.js for library management, connected to MongoDB. Provides API routes to manage users, books, reservations, and permissions, with JWT authentication.",
-          "repository": "https://github.com/JuandiGo1/API_Library"
-        },
-        "spanish": {
-          "name": "API de Biblioteca",
-          "description": "Servidor web usando Express.js para la gestión de bibliotecas, conectado a MongoDB. Proporciona rutas API para gestionar usuarios, libros, reservas y permisos, con autenticación JWT.",
-          "repository": "https://github.com/JuandiGo1/API_Library"
-        }
-      },
-      {
-        "english": {
-          "name": "Rubik’s Race Solver",
-          "description": "Web app that solves the Rubik’s Race game. Developed the frontend, integrated the backend, and handled the deployment.",
-          "repository": "https://github.com/JuandiGo1/Rubik-race"
-        },
-        "spanish": {
-          "name": "Solucionador de Rubik’s Race",
-          "description": "Aplicación web que resuelve el juego Rubik’s Race. Desarrollé el frontend, integré el backend y me encargué del despliegue.",
-          "repository": "https://github.com/JuandiGo1/Rubik-race"
-        }
+      "spanish": {
+        "name": "Sabiduría DB",
+        "description": "Aplicación web para una institución académica. Diseñé el modelo de base de datos y desarrollé el script correspondiente.",
+        "repository": "https://github.com/JuandiGo1/Sabiduria-DB"
       }
-    ]
-  }
-  
+    },
+    {
+      "english": {
+        "name": "Library API",
+        "description": "Web server using Express.js for library management, connected to MongoDB. Provides API routes to manage users, books, reservations, and permissions, with JWT authentication.",
+        "repository": "https://github.com/JuandiGo1/API_Library"
+      },
+      "spanish": {
+        "name": "API de Biblioteca",
+        "description": "Servidor web usando Express.js para la gestión de bibliotecas, conectado a MongoDB. Proporciona rutas API para gestionar usuarios, libros, reservas y permisos, con autenticación JWT.",
+        "repository": "https://github.com/JuandiGo1/API_Library"
+      }
+    }
+  ]
+}
