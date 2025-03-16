@@ -57,7 +57,8 @@
     ],
     "skills": {
       "programming_languages": ["JavaScript", "TypeScript","HTML5", "CSS", "Python", "Java", "SQL"],
-      "frameworks_and_tools": ["Express.js", "SQL Server", "Oracle SQL", "Git", "Vercel", "Excel"]
+      "frameworks_and_tools": ["Express.js", "SQL Server", "Oracle SQL", "Git", "Vercel", "Excel", "Power BI", "MongoDB", "Tailwind CSS"],
+      "soft_skills": ["Leadership", "Adaptability", "Problem-solving", "Communication"]
     },
     "languages": {
       "spanish": "Native",
