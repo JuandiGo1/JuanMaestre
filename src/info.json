@@ -80,6 +80,7 @@
     ],
     "frameworks_and_tools": [
       {"name": "Express.js", "logo": "https://cdn.simpleicons.org/express"},
+      {"name": "React", "logo": "https://cdn.simpleicons.org/react"},
       {"name": "SQL Server", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"},
       {"name": "Oracle SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"},
       {"name": "Git", "logo": "https://cdn.simpleicons.org/git"},
@@ -98,44 +99,16 @@
   "projects": [
     {
       "english": {
-        "name": "Sabiduría DB",
-        "description": "Web app for an academic institution. Designed the database model and developed the corresponding script.",
-        "repository": "https://github.com/JuandiGo1/Sabiduria-DB",
-        "image": "https://raw.githubusercontent.com/JuandiGo1/Sabiduria-DB/main/preview.png"
-      },
-      "spanish": {
-        "name": "Sabiduría DB",
-        "description": "Aplicación web para una institución académica. Diseñé el modelo de base de datos y desarrollé el script correspondiente.",
-        "repository": "https://github.com/JuandiGo1/Sabiduria-DB",
-        "image": "https://raw.githubusercontent.com/JuandiGo1/Sabiduria-DB/main/preview.png"
-      }
-    },
-    {
-      "english": {
-        "name": "Library API",
-        "description": "Web server using Express.js for library management, connected to MongoDB. Provides API routes to manage users, books, reservations, and permissions, with JWT authentication.",
-        "repository": "https://github.com/JuandiGo1/API_Library",
-        "image": "https://raw.githubusercontent.com/JuandiGo1/API_Library/main/preview.png"
-      },
-      "spanish": {
-        "name": "API de Biblioteca",
-        "description": "Servidor web usando Express.js para la gestión de bibliotecas, conectado a MongoDB. Proporciona rutas API para gestionar usuarios, libros, reservas y permisos, con autenticación JWT.",
-        "repository": "https://github.com/JuandiGo1/API_Library",
-        "image": "https://raw.githubusercontent.com/JuandiGo1/API_Library/main/preview.png"
-      }
-    },
-    {
-      "english": {
         "name": "Rubik’s Race Solver",
         "description": "Web app that solves the Rubik’s Race game. Developed the frontend, integrated the backend, and handled the deployment.",
         "repository": "https://rubik-race.vercel.app",
-        "image": "https://raw.githubusercontent.com/JuandiGo1/Rubik-race/main/preview.png"
+        "image": "https://github.com/user-attachments/assets/75adcc5d-67ad-4662-8e7f-4e04de615032"
       },
       "spanish": {
         "name": "Solucionador de Rubik’s Race",
         "description": "Aplicación web que resuelve el juego Rubik’s Race. Desarrollé el frontend, integré el backend y me encargué del despliegue.",
         "repository": "https://rubik-race.vercel.app",
-        "image": "https://raw.githubusercontent.com/JuandiGo1/Rubik-race/main/preview.png"
+        "image": "https://github.com/user-attachments/assets/75adcc5d-67ad-4662-8e7f-4e04de615032"
       }
     },
     {
@@ -151,6 +124,35 @@
         "repository": "https://jaymeddlc.github.io/Job-Portal-JMJ/pages/home.html",
         "image": "https://github-production-user-asset-6210df.s3.amazonaws.com/98894997/422079271-93532ddf-bfd9-48f1-98de-23917efe73ce.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250317%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250317T170958Z&X-Amz-Expires=300&X-Amz-Signature=e13b79aabb9e2c8ee5be441d8d439c602560b1e9a5f9a76caa24a8eeec85753f&X-Amz-SignedHeaders=host"
       }
+    },
+    {
+      "english": {
+        "name": "Sabiduría DB",
+        "description": "Web app for an academic institution. Designed the database model and developed the corresponding script.",
+        "repository": "https://github.com/JuandiGo1/Sabiduria-DB",
+        "image": "https://github.com/user-attachments/assets/73602845-ada2-48c8-b3b7-4475d7291182"
+      },
+      "spanish": {
+        "name": "Sabiduría DB",
+        "description": "Aplicación web para una institución académica. Diseñé el modelo de base de datos y desarrollé el script correspondiente.",
+        "repository": "https://github.com/JuandiGo1/Sabiduria-DB",
+        "image": "https://github.com/user-attachments/assets/73602845-ada2-48c8-b3b7-4475d7291182"
+      }
+    },
+    {
+      "english": {
+        "name": "Library API",
+        "description": "Web server using Express.js for library management, connected to MongoDB. Provides API routes to manage users, books, reservations, and permissions, with JWT authentication.",
+        "repository": "https://github.com/JuandiGo1/API_Library",
+        "image": "https://github.com/user-attachments/assets/533211ff-8a37-443d-aa89-8611dddad1e9"
+      },
+      "spanish": {
+        "name": "API de Biblioteca",
+        "description": "Servidor web usando Express.js para la gestión de bibliotecas, conectado a MongoDB. Proporciona rutas API para gestionar usuarios, libros, reservas y permisos, con autenticación JWT.",
+        "repository": "https://github.com/JuandiGo1/API_Library",
+        "image": "https://github.com/user-attachments/assets/533211ff-8a37-443d-aa89-8611dddad1e9"
+      }
     }
+    
   ]
 }

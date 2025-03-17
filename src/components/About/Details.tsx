@@ -21,13 +21,13 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
         speed={60}
         maxIterations={20}
         sequential={true}
-        className="text-white text-5xl font-bold"
-        encryptedClassName="text-5xl font-bold text-blue-500"
+        className="text-white text-5xl font-bold "
+        encryptedClassName="text-5xl font-bold text-blue-500 "
         animateOn="view"
         revealDirection="start"
       />
 
-      <div className="text-white font-medium p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="text-white font-medium p-8 grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
         <div>
           <h2 className="text-4xl text-left font-semibold mb-4">
             <i className="fa-solid fa-user-graduate text-3xl mr-2"></i>

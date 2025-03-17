@@ -10,7 +10,7 @@ const Technologies: React.FC<{ language: "english" | "spanish" }> = ({
 
   return (
     <div id="skills" className="text-white font-medium p-8 flex flex-col justify-between items-center">
-      <div className="mt-3 mb-10">
+      <div className="mt-3 mb-20">
         <DecryptedText
           text={
             language === "english"
@@ -20,8 +20,8 @@ const Technologies: React.FC<{ language: "english" | "spanish" }> = ({
           speed={60}
           maxIterations={20}
           sequential={true}
-          className="text-white text-5xl font-bold"
-          encryptedClassName="text-5xl font-bold text-blue-500"
+          className="text-white text-5xl font-bold "
+          encryptedClassName="text-5xl font-bold text-blue-500 "
           animateOn="view"
           revealDirection="start"
         />
