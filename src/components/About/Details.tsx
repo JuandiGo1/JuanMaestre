@@ -13,7 +13,7 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
   const experience = info.experience.map((exp) => exp[language]);
 
   return (
-    <div className="name">
+    <div id="about">
       <DecryptedText
         text={
           language === "english" ? "< More about Me />" : "< Más sobre mí />"

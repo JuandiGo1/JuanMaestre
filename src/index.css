@@ -27,3 +27,8 @@ body{
     animation-play-state: paused;
   }
 }
+
+
+.group:hover .animate-loop-scroll {
+  animation-play-state: paused;
+}
