@@ -6,6 +6,7 @@ import Particles from "./components/Particles/Particles";
 import About from "./components/about/About";
 import Details from "./components/About/Details";
 import Technologies from "./components/Skills/Tecnologies";
+import Projects from "./components/Projects/Projects";
 
 const fondo = (
   <div className="absolute top-0 right-0 left-0 bottom-0 w-full h-full z-0">
@@ -43,8 +44,11 @@ function App() {
         <section className="min-h-(90vh)">
           <Details language={language} />
         </section>
-        <section className="min-h-screen">
+        <section className="min-h-(80vh)">
           <Technologies language={language} />
+        </section>
+        <section className="min-h-screen">
+          <Projects language={language}></Projects>
         </section>
       </div>
     </div>
