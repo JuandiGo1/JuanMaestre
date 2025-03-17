@@ -22,11 +22,12 @@ const Card_Education: React.FC<CardEducationProps> = ({
           ref={ref}
           className="flex items-start max-w-dvh bg-[#121212]/95 text-white rounded-lg mb-4 border hover:bg-blue-950 transition  ease-in-out"
           initial={{ opacity: 0, x: -50 }}
-          animate={ inView ?{ opacity: 1, x: 0 } : { opacity: 0, x: -50  }}
+          animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         >
           <img
+            loading="lazy"
             src={imageUrl}
             alt={institution}
             className="w-32 h-full object-cover rounded-l-lg"

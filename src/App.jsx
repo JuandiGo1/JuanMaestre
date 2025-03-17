@@ -40,7 +40,7 @@ function App() {
             <Lanyard position={[0, 0, 11]} gravity={[0, -40, 0]} fov={20} />
           </div>
         </div>
-        <section className="min-h-screen">
+        <section className="min-h-(90vh)">
           <Details language={language} />
         </section>
         <section className="min-h-screen">

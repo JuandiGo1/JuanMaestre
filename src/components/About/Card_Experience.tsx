@@ -22,7 +22,7 @@ const Card_Experience: React.FC<CardExperienceProps> = ({ role, organization, pe
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         >
-          <img src={logoUrl} alt={organization} className="w-16 h-16 object-cover rounded-full mr-4" />
+          <img loading="lazy" src={logoUrl} alt={organization} className="w-16 h-16 object-cover rounded-full mr-4" />
           <div className="flex flex-col justify-center items-start gap-2">
             <div className="flex justify-between items-center w-full">
                 <p className="text-lg font-semibold">{role}</p>
