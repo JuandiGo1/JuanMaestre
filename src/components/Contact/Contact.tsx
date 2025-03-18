@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import info from "../../info.json";
 import { motion } from "framer-motion";
 import DecryptedText from "../DecryptedText/DecryptedText";
@@ -13,16 +14,35 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí puedes manejar el envío del formulario, por ejemplo, enviando los datos a un servidor
-    console.log("Nombre:", firstName);
-    console.log("Apellido:", lastName);
-    console.log("Email:", email);
-    console.log("Mensaje:", message);
-    // Limpiar el formulario después de enviarlo
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setMessage("");
+
+    const templateParams = {
+      firstName,
+      lastName,
+      email,
+      message,
+      to_email: info.contact.email , // Reemplaza con tu dirección de correo electrónico
+    };
+
+    emailjs
+      .send(
+        "service_s6ydocn", // Reemplaza con tu Service ID de EmailJS
+        "template_ox9atvj", // Reemplaza con tu Template ID de EmailJS
+        templateParams,
+        "I6AGDa2z8kT341kWL" // Reemplaza con tu Public Key de EmailJS
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          // Limpiar el formulario después de enviarlo
+          setFirstName("");
+          setLastName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
   };
 
   const texts = {
@@ -52,7 +72,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
 
   return (
     <div id="contact">
-        <div className="mt-20 mb-10">
+      <div className="mt-20 mb-10">
         <DecryptedText
           text={`< ${currentTexts.contactMe} />`}
           speed={60}
@@ -64,9 +84,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
           revealDirection="start"
         />
       </div>
-      <div
-        className="max-w-4xl mx-auto bg-[#121212]/90 p-8 rounded-xl shadow-2xl shadow-black grid grid-cols-1 md:grid-cols-2 gap-8"
-      >
+      <div className="max-w-4xl mx-auto bg-[#121212]/90 p-8 rounded-xl shadow-2xl shadow-black grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col justify-around items-center text-white">
           <h2 className="text-3xl font-bold text-white mb-6">
             {currentTexts.contactMe}
@@ -77,7 +95,6 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
               <i className="fa-solid fa-location-dot mr-2"></i> Barranquilla,
               Colombia{" "}
             </p>
-            
             <p className="mb-4">
               <i className="fa-solid fa-envelope mr-2"></i> {info.contact.email}{" "}
             </p>
