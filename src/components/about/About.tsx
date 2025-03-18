@@ -85,7 +85,7 @@ const About: React.FC<{ language: "english" | "spanish" }> = ({ language }) => {
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-4xl font-bold mb-4">{`< ${currentTitles.aboutMe} />`}</h1>
-        <p className="text-xl m-4">{profile.description}</p>
+        <p className="text-[1.125rem] m-4">{profile.description}</p>
       </motion.div>
 
     </div>

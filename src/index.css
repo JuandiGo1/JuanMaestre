@@ -32,3 +32,10 @@ body{
 .group:hover .animate-loop-scroll {
   animation-play-state: paused;
 }
+
+.custom-toast {
+  background-color: #1782e6c0 !important; /* Cambia el color de fondo */
+  color: white !important; /* Cambia el color del texto */
+  --toastify-icon-color-success: #17e6b2c0 !important; /* Cambia el color del icono */
+  --toastify-color-progress-success: #f8f8f8de !important; /* Cambia el color de la barra de progreso */
+}

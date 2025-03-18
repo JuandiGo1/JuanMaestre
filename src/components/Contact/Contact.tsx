@@ -11,6 +11,10 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const phone = info.contact.phone.split(" ").join("");
+  const whatsapp = `https://wa.me/${phone}`;
+  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Aquí puedes manejar el envío del formulario, por ejemplo, enviando los datos a un servidor
@@ -52,7 +56,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
 
   return (
     <div id="contact">
-        <div className="mt-20 mb-20">
+      <div className="mt-20 mb-20">
         <DecryptedText
           text={`< ${currentTexts.contactMe} />`}
           speed={60}
@@ -64,8 +68,12 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
           revealDirection="start"
         />
       </div>
-      <div
+
+      <motion.div
         className="max-w-4xl mx-auto bg-[#121212]/90 p-8 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
       >
         <div className="flex flex-col justify-around items-center text-white">
           <h2 className="text-3xl font-bold text-white mb-6">
@@ -77,7 +85,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
               <i className="fa-solid fa-location-dot mr-2"></i> Barranquilla,
               Colombia{" "}
             </p>
-            
+
             <p className="mb-4">
               <i className="fa-solid fa-envelope mr-2"></i> {info.contact.email}{" "}
             </p>
@@ -99,7 +107,17 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <i className="fa-brands fa-linkedin text-gray-50 text-4xl"></i>
+              <i className="fa-brands fa-linkedin text-gray-50 text-4xl mr-4"></i>
+            </motion.a>
+            <motion.a
+              href={whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <i className="fa-brands fa-square-whatsapp text-gray-50 text-4xl"></i>
             </motion.a>
           </div>
         </div>
@@ -182,7 +200,8 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
             </div>
           </form>
         </div>
-      </div>
+      </motion.div>
+
     </div>
   );
 };
