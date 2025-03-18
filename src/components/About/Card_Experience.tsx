@@ -25,11 +25,11 @@ const Card_Experience: React.FC<CardExperienceProps> = ({ role, organization, pe
           <img loading="lazy" src={logoUrl} alt={organization} className="w-16 h-16 object-cover rounded-full mr-4" />
           <div className="flex flex-col justify-center items-start gap-2">
             <div className="flex justify-between items-center w-full">
-                <p className="text-lg font-semibold">{role}</p>
+                <p className="text-2xl font-semibold">{role}</p>
                 <p className="text-sm bg-gray-600/60 p-1 rounded-lg mb-2">{period}</p>
             </div>
-            <p className="text-sm">{organization}</p>
-            <p className="text-sm mt-2 text-left mb-4">{description}</p>
+            <p className="text-lg">{organization}</p>
+            <p className="text-lg mt-2 text-left mb-4">{description}</p>
           </div>
         </motion.div>
       )}

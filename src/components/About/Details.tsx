@@ -40,7 +40,7 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
             imageUrl={education.logo}
           />
 
-          <h2 className="text-4xl text-left font-semibold mt-10 mb-4">
+          <h2 className="text-4xl text-left font-semibold mt-10 mb-10">
             <i className="fa-solid fa-earth-americas text-3xl mr-2"></i>
             {language === "english" ? "Languages" : "Idiomas"}
           </h2>

@@ -39,6 +39,13 @@ export default function DecryptedText({
   const containerRef = useRef(null)
 
   useEffect(() => {
+    setDisplayText(text);
+    setRevealedIndices(new Set());
+    setIsScrambling(false);
+    setIsHovering(false);
+  }, [text]);
+
+  useEffect(() => {
     let interval
     let currentIteration = 0
 

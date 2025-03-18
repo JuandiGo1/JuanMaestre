@@ -1,7 +1,6 @@
 {
   "name": "Juan David Maestre",
   "contact": {
-    "phone": "+57 3177512364",
     "email": "maestrejull_9@hotmail.com",
     "linkedin": "https://www.linkedin.com/in/juan-maestre-b9573330a/",
     "github": "https://github.com/JuandiGo1"
@@ -116,13 +115,13 @@
         "name": "JMJ Job Portal",
         "description": "I was responsible for developing the landing page, with a responsive design and a dark mode implementation, using HTML, CSS, and JavaScript.",
         "repository": "https://jaymeddlc.github.io/Job-Portal-JMJ/pages/home.html",
-        "image": "https://github-production-user-asset-6210df.s3.amazonaws.com/98894997/422079271-93532ddf-bfd9-48f1-98de-23917efe73ce.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250317%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250317T170958Z&X-Amz-Expires=300&X-Amz-Signature=e13b79aabb9e2c8ee5be441d8d439c602560b1e9a5f9a76caa24a8eeec85753f&X-Amz-SignedHeaders=host"
+        "image": "https://private-user-images.githubusercontent.com/98894997/422079271-93532ddf-bfd9-48f1-98de-23917efe73ce.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyNjM0NTgsIm5iZiI6MTc0MjI2MzE1OCwicGF0aCI6Ii85ODg5NDk5Ny80MjIwNzkyNzEtOTM1MzJkZGYtYmZkOS00OGYxLTk4ZGUtMjM5MTdlZmU3M2NlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE4VDAxNTkxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJhYmYxMGFjZWJlYTIyMDMzMTNhYmIyMzE3NjMwODU1MDVlNmE2YzJjOTk3YzUwZTEzYTlhYzZmY2MyOTdhYmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.4XJ0k6BfgLTbcbrjgx52-WjsBY9WYLB-AyxoMu02Nls"
       },
       "spanish": {
         "name": "JMJ Job Portal",
         "description": "Me encargué de desarrollar la landing page, con diseño responsive e implementación de un modo oscuro, usando HTML, CSS y JavaScript.",
         "repository": "https://jaymeddlc.github.io/Job-Portal-JMJ/pages/home.html",
-        "image": "https://github-production-user-asset-6210df.s3.amazonaws.com/98894997/422079271-93532ddf-bfd9-48f1-98de-23917efe73ce.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250317%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250317T170958Z&X-Amz-Expires=300&X-Amz-Signature=e13b79aabb9e2c8ee5be441d8d439c602560b1e9a5f9a76caa24a8eeec85753f&X-Amz-SignedHeaders=host"
+        "image": "https://private-user-images.githubusercontent.com/98894997/422079271-93532ddf-bfd9-48f1-98de-23917efe73ce.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIyNjM0NTgsIm5iZiI6MTc0MjI2MzE1OCwicGF0aCI6Ii85ODg5NDk5Ny80MjIwNzkyNzEtOTM1MzJkZGYtYmZkOS00OGYxLTk4ZGUtMjM5MTdlZmU3M2NlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE4VDAxNTkxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJhYmYxMGFjZWJlYTIyMDMzMTNhYmIyMzE3NjMwODU1MDVlNmE2YzJjOTk3YzUwZTEzYTlhYzZmY2MyOTdhYmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.4XJ0k6BfgLTbcbrjgx52-WjsBY9WYLB-AyxoMu02Nls"
       }
     },
     {

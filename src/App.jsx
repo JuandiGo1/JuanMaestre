@@ -3,10 +3,11 @@ import "./App.css";
 import Lanyard from "./components/Lanyard/Lanyard";
 import Navbar from "./components/navbar/navbar";
 import Particles from "./components/Particles/Particles";
-import About from "./components/about/About";
+import About from "./components/About/About";
 import Details from "./components/About/Details";
 import Technologies from "./components/Skills/Tecnologies";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 const fondo = (
   <div className="absolute top-0 right-0 left-0 bottom-0 w-full h-full z-0">
@@ -49,6 +50,9 @@ function App() {
         </section>
         <section className="min-h-screen">
           <Projects language={language}></Projects>
+        </section>
+        <section className="min-h-screen">
+          <Contact language={language}></Contact>
         </section>
       </div>
     </div>
