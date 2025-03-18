@@ -52,7 +52,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
 
   return (
     <div id="contact">
-        <div className="mt-20 mb-20">
+        <div className="mt-20 mb-10">
         <DecryptedText
           text={`< ${currentTexts.contactMe} />`}
           speed={60}
@@ -65,7 +65,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
         />
       </div>
       <div
-        className="max-w-4xl mx-auto bg-[#121212]/90 p-8 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8"
+        className="max-w-4xl mx-auto bg-[#121212]/90 p-8 rounded-xl shadow-2xl shadow-black grid grid-cols-1 md:grid-cols-2 gap-8"
       >
         <div className="flex flex-col justify-around items-center text-white">
           <h2 className="text-3xl font-bold text-white mb-6">
