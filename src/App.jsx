@@ -52,7 +52,7 @@ function App() {
         <section className="min-h-screen">
           <Projects language={language}></Projects>
         </section>
-        <section className="min-h-screen">
+        <section className="min-h-(90vh) mb-30">
           <Contact language={language}></Contact>
         </section>
         <Footer></Footer>
