@@ -11,10 +11,10 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false); // Estado para controlar el envío
 
   const phone = info.contact.phone.split(" ").join("");
   const whatsapp = `https://wa.me/${phone}`;
-  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,7 +24,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
       lastName,
       email,
       message,
-      to_email: info.contact.email , // Reemplaza con tu dirección de correo electrónico
+      to_email: info.contact.email, // Reemplaza con tu dirección de correo electrónico
     };
 
     emailjs
@@ -42,6 +42,8 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
           setLastName("");
           setEmail("");
           setMessage("");
+          setIsSubmitted(true); // Actualizar el estado de envío
+          setTimeout(() => setIsSubmitted(false), 3000); // Restablecer el estado después de 3 segundos
         },
         (error) => {
           console.log("FAILED...", error);
@@ -105,40 +107,32 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
               <i className="fa-solid fa-location-dot mr-2"></i> Barranquilla,
               Colombia{" "}
             </p>
-
             <p className="mb-4">
               <i className="fa-solid fa-envelope mr-2"></i> {info.contact.email}{" "}
             </p>
-            <motion.a
+            <a
               href={info.contact.github}
               target="_blank"
               rel="noreferrer"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mr-4"
             >
-              <i className="fa-brands fa-square-github text-gray-50 text-4xl mr-4"></i>
-            </motion.a>
-            <motion.a
+              <i className="fa-brands fa-square-github text-gray-50 text-4xl"></i>
+            </a>
+            <a
               href={info.contact.linkedin}
               target="_blank"
               rel="noreferrer"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              className="mr-4"
             >
-              <i className="fa-brands fa-linkedin text-gray-50 text-4xl mr-4"></i>
-            </motion.a>
-            <motion.a
+              <i className="fa-brands fa-linkedin text-gray-50 text-4xl"></i>
+            </a>
+            <a
               href={whatsapp}
               target="_blank"
               rel="noreferrer"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
             >
               <i className="fa-brands fa-square-whatsapp text-gray-50 text-4xl"></i>
-            </motion.a>
+            </a>
           </div>
         </div>
         <div>
@@ -213,15 +207,19 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
             <div className="col-span-2 flex w-full">
               <button
                 type="submit"
-                className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline w-full"
+                className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline w-full flex items-center justify-center transition-all duration-300 ease-in-out"
               >
-                {currentTexts.send}
+                <span className={`transition-opacity duration-300 ${isSubmitted ? "hidden opacity-0" : "opacity-100"}`}>
+                  {currentTexts.send}
+                </span>
+                <span className={`transition-opacity duration-300 flex items-start justify-center ${isSubmitted ? "opacity-100" : "opacity-0"}`}>
+                  <i className="fa-solid fa-circle-check text-white text-lg"></i>
+                </span>
               </button>
             </div>
           </form>
         </div>
       </motion.div>
-
     </div>
   );
 };
