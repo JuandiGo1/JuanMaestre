@@ -66,7 +66,40 @@
         "credential_url": "https://www.linkedin.com/in/juan-maestre-b9573330a/details/certifications/1742336000238/single-media-viewer/?profileId=ACoAAE7GQeEB8AeTVv-bvkp1mUQyByZWRbrxTRQ",
         "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQGASFBl3wjb5w/company-logo_200_200/company-logo_200_200/0/1673548345649/soy_lder_net_logo?e=1747872000&v=beta&t=h2cDTdHjMjkjpXGVQtQFhtaV3qXGkT3UW4WWSsBsOog"
       }
+    },
+    {
+      "english": {
+        "name": "Voxy English Proeficiency Certificate - High Intermediate",
+        "issuer": "Voxy",
+        "date": "March 2025",
+        "credential_url": "https://app.voxy.com/certificates/proficiency-test/67d9d9855d809e67c7700397/",
+        "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQFhR4OQEr6-lA/company-logo_200_200/company-logo_200_200/0/1630492762761/voxy_logo?e=1747872000&v=beta&t=D2CAJcdJogYXDGZF9QWGU8a0xBJxkZN8Eou4OjpkB5g"
+      },
+      "spanish": {
+        "name": "Certificado de Inglés de Voxy - Nivel Intermedio Alto",
+        "issuer": "Voxy",
+        "date": "Marzo 2025",
+        "credential_url": "https://app.voxy.com/certificates/proficiency-test/67d9d9855d809e67c7700397/",
+        "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQFhR4OQEr6-lA/company-logo_200_200/company-logo_200_200/0/1630492762761/voxy_logo?e=1747872000&v=beta&t=D2CAJcdJogYXDGZF9QWGU8a0xBJxkZN8Eou4OjpkB5g"
+      }
+    },
+    {
+      "english": {
+        "name": "SCRUM Fundamentals",
+        "issuer": "soylider.net",
+        "date": "June 2024",
+        "credential_url": "https://www.linkedin.com/in/juan-maestre-b9573330a/details/certifications/1723320095124/single-media-viewer/?profileId=ACoAAE7GQeEB8AeTVv-bvkp1mUQyByZWRbrxTRQ",
+        "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQGASFBl3wjb5w/company-logo_200_200/company-logo_200_200/0/1673548345649/soy_lder_net_logo?e=1747872000&v=beta&t=h2cDTdHjMjkjpXGVQtQFhtaV3qXGkT3UW4WWSsBsOog"
+      },
+      "spanish": {
+        "name": "Fundamentos de SCRUM",
+        "issuer": "soylider.net",
+        "date": "Junio 2024",
+        "credential_url": "https://www.linkedin.com/in/juan-maestre-b9573330a/details/certifications/1723320095124/single-media-viewer/?profileId=ACoAAE7GQeEB8AeTVv-bvkp1mUQyByZWRbrxTRQ",
+        "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQGASFBl3wjb5w/company-logo_200_200/company-logo_200_200/0/1673548345649/soy_lder_net_logo?e=1747872000&v=beta&t=h2cDTdHjMjkjpXGVQtQFhtaV3qXGkT3UW4WWSsBsOog"
+      }
     }
+    
   ],
   "experience": [
     {
@@ -128,7 +161,7 @@
   },
   "languages": {
     "spanish": "Native",
-    "english": "B1"
+    "english": "B2"
   },
   "projects": [
     {

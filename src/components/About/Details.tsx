@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import info from "../../info.json";
 import Card_Education from "./Card_Education";
 import Card_Experience from "./Card_Experience";
@@ -9,9 +9,15 @@ import Card_Certification from "./Card_Certification";
 const Details: React.FC<{ language: "english" | "spanish" }> = ({
   language,
 }) => {
+  const [showAllCertifications, setShowAllCertifications] = useState(false); // Estado para controlar cuántos certificados se muestran
   const education = info.education[language];
   const languages = info.languages;
   const experience = info.experience.map((exp) => exp[language]);
+
+  // Mostrar solo los primeros 2 certificados si no se ha hecho clic en "Ver más"
+  const certificationsToShow = showAllCertifications
+    ? info.certifications
+    : info.certifications.slice(0, 2);
 
   return (
     <div id="about" className="p-6">
@@ -45,9 +51,9 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
           {/*Certificaciones*/}
           <h2 className="text-3xl text-left font-medium mb-4">
             <i className="fa-solid fa-award text-2xl mr-2 "></i>
-            {language === "english" ? "Certifiations" : "Certificados"}
+            {language === "english" ? "Certifications" : "Certificados"}
           </h2>
-          {info.certifications.map((cert, index) => (
+          {certificationsToShow.map((cert, index) => (
             <Card_Certification
               key={index}
               name={cert[language].name}
@@ -55,28 +61,24 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
               date={cert[language].date}
               credentialURL={cert[language].credential_url}
               imageUrl={cert[language].logo}
-
+              language={language}
             />
           ))}
-
-          {/*Idiomas*/}
-          <h2 className="text-3xl text-left font-medium mt-10 mb-10">
-            <i className="fa-solid fa-earth-americas text-2xl mr-2 "></i>
-            {language === "english" ? "Languages" : "Idiomas"}
-          </h2>
-          <div className="flex justify-center items-center gap-10 text-2xl text-left">
-            <LanguageCard
-              flagUrl="src\assets\colombia.png"
-              language={language === "english" ? "Spanish" : "Español"}
-              level={languages.spanish}
-            />
-
-            <LanguageCard
-              flagUrl="src\assets\usa.png"
-              language={language === "english" ? "English" : "Inglés"}
-              level={languages.english}
-            />
-          </div>
+          {/* Botón para mostrar más o menos */}
+          {info.certifications.length > 2 && (
+            <button
+              onClick={() => setShowAllCertifications(!showAllCertifications)}
+              className="text-blue-500 text-lg hover:underline mt-4"
+            >
+              {showAllCertifications
+                ? language === "english"
+                  ? "Show Less"
+                  : "Ver Menos"
+                : language === "english"
+                ? "Show More"
+                : "Ver Más"}
+            </button>
+          )}
         </div>
 
         {/*Exp*/}
@@ -95,6 +97,24 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
               logoUrl={exp.logo}
             />
           ))}
+          {/*Idiomas*/}
+          <h2 className="text-3xl text-left font-medium mt-10 mb-10">
+            <i className="fa-solid fa-earth-americas text-2xl mr-2 "></i>
+            {language === "english" ? "Languages" : "Idiomas"}
+          </h2>
+          <div className="flex justify-center items-center gap-10 text-2xl text-left">
+            <LanguageCard
+              flagUrl="src\assets\colombia.png"
+              language={language === "english" ? "Spanish" : "Español"}
+              level={languages.spanish}
+            />
+
+            <LanguageCard
+              flagUrl="src\assets\usa.png"
+              language={language === "english" ? "English" : "Inglés"}
+              level={languages.english}
+            />
+          </div>
         </div>
       </div>
     </div>

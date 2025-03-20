@@ -26,7 +26,7 @@ const Projects: React.FC<{ language: "english" | "spanish" }> = ({
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
         {projects.map((project, index) => (
           <Card_Project key={index} project={project} language={language} />
         ))}
