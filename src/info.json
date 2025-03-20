@@ -34,6 +34,40 @@
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBb15zio8gKuIEDJZXkEHyB9pSmOQ7MxZEQ&s"
     }
   },
+  "certifications": [
+    {
+      "english": {
+        "name": "Career Accelerator with Power BI",
+        "issuer": "Empowerdata",
+        "date": "March 2025",
+        "credential_url": "https://www.linkedin.com/in/juan-maestre-b9573330a/details/certifications/1742048836282/single-media-viewer/?profileId=ACoAAE7GQeEB8AeTVv-bvkp1mUQyByZWRbrxTRQ",
+        "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQFQ6GuzEEKBrg/company-logo_200_200/company-logo_200_200/0/1630560141679/empowerbi_logo?e=1747872000&v=beta&t=uxumOuR9yhKfPLikYKV-4bd7cneVQ0KV1oVActx_Hik"
+      },
+      "spanish": {
+        "name": "Acelerador de Carrera con Power BI",
+        "issuer": "Empowerdata",
+        "date": "Marzo 2025",
+        "credential_url": "https://www.linkedin.com/in/juan-maestre-b9573330a/details/certifications/1742048836282/single-media-viewer/?profileId=ACoAAE7GQeEB8AeTVv-bvkp1mUQyByZWRbrxTRQ",
+        "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQFQ6GuzEEKBrg/company-logo_200_200/company-logo_200_200/0/1630560141679/empowerbi_logo?e=1747872000&v=beta&t=uxumOuR9yhKfPLikYKV-4bd7cneVQ0KV1oVActx_Hik"
+      }
+    },
+    {
+      "english": {
+        "name": "Fundamentals of Project Management",
+        "issuer": "soylider.net",
+        "date": "March 2025",
+        "credential_url": "https://soylider.net/certificado/K2ZNNO-CE002205",
+        "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQGASFBl3wjb5w/company-logo_200_200/company-logo_200_200/0/1673548345649/soy_lder_net_logo?e=1747872000&v=beta&t=h2cDTdHjMjkjpXGVQtQFhtaV3qXGkT3UW4WWSsBsOog"
+      },
+      "spanish": {
+        "name": "Fundamentos en Gestión de Proyectos",
+        "issuer": "soylider.net",
+        "date": "Marzo 2025",
+        "credential_url": "https://www.linkedin.com/in/juan-maestre-b9573330a/details/certifications/1742336000238/single-media-viewer/?profileId=ACoAAE7GQeEB8AeTVv-bvkp1mUQyByZWRbrxTRQ",
+        "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQGASFBl3wjb5w/company-logo_200_200/company-logo_200_200/0/1673548345649/soy_lder_net_logo?e=1747872000&v=beta&t=h2cDTdHjMjkjpXGVQtQFhtaV3qXGkT3UW4WWSsBsOog"
+      }
+    }
+  ],
   "experience": [
     {
       "english": {

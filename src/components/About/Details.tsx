@@ -4,6 +4,7 @@ import Card_Education from "./Card_Education";
 import Card_Experience from "./Card_Experience";
 import DecryptedText from "../DecryptedText/DecryptedText";
 import LanguageCard from "./Lenguage";
+import Card_Certification from "./Card_Certification";
 
 const Details: React.FC<{ language: "english" | "spanish" }> = ({
   language,
@@ -13,7 +14,7 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
   const experience = info.experience.map((exp) => exp[language]);
 
   return (
-    <div id="about">
+    <div id="about" className="p-6">
       <DecryptedText
         text={
           language === "english" ? "< More about Me />" : "< Más sobre mí />"
@@ -29,8 +30,9 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
 
       <div className="text-white font-medium p-8 grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
         <div>
-          <h2 className="text-4xl text-left font-semibold mb-4">
-            <i className="fa-solid fa-user-graduate text-3xl mr-2"></i>
+          {/*Educacion*/}
+          <h2 className="text-3xl text-left font-medium mb-4">
+            <i className="fa-solid fa-user-graduate text-2xl mr-2 "></i>
             {language === "english" ? "Education" : "Educación"}
           </h2>
           <Card_Education
@@ -40,8 +42,26 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
             imageUrl={education.logo}
           />
 
-          <h2 className="text-4xl text-left font-semibold mt-10 mb-10">
-            <i className="fa-solid fa-earth-americas text-3xl mr-2"></i>
+          {/*Certificaciones*/}
+          <h2 className="text-3xl text-left font-medium mb-4">
+            <i className="fa-solid fa-award text-2xl mr-2 "></i>
+            {language === "english" ? "Certifiations" : "Certificados"}
+          </h2>
+          {info.certifications.map((cert, index) => (
+            <Card_Certification
+              key={index}
+              name={cert[language].name}
+              issuer={cert[language].issuer}
+              date={cert[language].date}
+              credentialURL={cert[language].credential_url}
+              imageUrl={cert[language].logo}
+
+            />
+          ))}
+
+          {/*Idiomas*/}
+          <h2 className="text-3xl text-left font-medium mt-10 mb-10">
+            <i className="fa-solid fa-earth-americas text-2xl mr-2 "></i>
             {language === "english" ? "Languages" : "Idiomas"}
           </h2>
           <div className="flex justify-center items-center gap-10 text-2xl text-left">
@@ -58,9 +78,11 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
             />
           </div>
         </div>
+
+        {/*Exp*/}
         <div>
-          <h2 className="text-4xl text-left font-semibold mb-4">
-            <i className="fa-solid fa-group-arrows-rotate text-3xl mr-2"></i>
+          <h2 className="text-3xl text-left font-medium mb-4">
+            <i className="fa-solid fa-group-arrows-rotate text-2xl mr-2 "></i>
             {language === "english" ? "Experience" : "Experiencia"}
           </h2>
           {experience.map((exp, index) => (
@@ -70,7 +92,7 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
               organization={exp.organization}
               period={exp.period}
               description={exp.description}
-              logoUrl={exp.logo} 
+              logoUrl={exp.logo}
             />
           ))}
         </div>

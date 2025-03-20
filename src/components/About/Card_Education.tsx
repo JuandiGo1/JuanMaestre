@@ -20,7 +20,7 @@ const Card_Education: React.FC<CardEducationProps> = ({
       {({ inView, ref }) => (
         <motion.div
           ref={ref}
-          className="flex items-start max-w-dvh bg-[#121212]/95 text-white rounded-lg mb-4 border hover:bg-blue-950 transition  ease-in-out"
+          className="flex items-start max-w-dvh bg-[#121212]/95 text-white rounded-lg mb-6 border hover:bg-blue-950 transition  ease-in-out"
           initial={{ opacity: 0, x: -50 }}
           animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
@@ -30,7 +30,7 @@ const Card_Education: React.FC<CardEducationProps> = ({
             loading="lazy"
             src={imageUrl}
             alt={institution}
-            className="w-32 h-full object-cover rounded-l-lg"
+            className="w-16 h-16 object-center  rounded-full m-4"
           />
           <div className="flex flex-col justify-center items-start p-4 gap-3">
             <p className="text-2xl font-semibold">{degree}</p>
