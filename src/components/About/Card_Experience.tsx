@@ -18,11 +18,11 @@ const Card_Experience: React.FC<CardExperienceProps> = ({
 }) => {
   return (
     <Card imageUrl={logoUrl} altText={organization} initialX={50}>
-      <div className="flex justify-between items-center w-full">
-        <p className="text-2xl font-semibold">{role}</p>
+      <div className="flex justify-between items-center w-full text-left">
+        <p className="text-xl font-semibold mr-2">{role}</p>
         <p className="text-sm bg-gray-600/60 p-1 rounded-lg mb-2">{period}</p>
       </div>
-      <p className="text-lg">{organization}</p>
+      <p className="text-lg text-left">{organization}</p>
       <p className="text-lg mt-2 text-left mb-4">{description}</p>
     </Card>
   );

@@ -30,7 +30,7 @@ const Card_Project: React.FC<{
           <div className="p-4">
             <h3 className="text-xl font-bold mb-2">{project[language].name}</h3>
             <p className="mb-4">{project[language].description}</p>
-            <span className="text-yellow-400 hover:text-yellow-300">
+            <span className="text-blue-500 hover:text-yellow-300">
               {language === "english" ? "View More" : "Ver Más"}
             </span>
           </div>

@@ -20,7 +20,7 @@ const Card_Certification: React.FC<CardCertificationProps> = ({
 }) => {
   return (
     <Card imageUrl={imageUrl} altText={issuer} initialX={-50}>
-      <p className="text-2xl font-semibold text-left">{name}</p>
+      <p className="text-xl font-semibold text-left">{name}</p>
       <p className="text-lg">{issuer}</p>
       <p className="text-sm">{date}</p>
       <div className=" bg-white  rounded-full border-2 text-gray-700 p-2  text-sm font-semibold shadow-2xl hover:text-blue-500 mt-2">

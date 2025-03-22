@@ -110,7 +110,7 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
             />
 
             <LanguageCard
-              flagUrl="src\assets\usa.png"
+              flagUrl="src\assets\eng.png"
               language={language === "english" ? "English" : "Inglés"}
               level={languages.english}
             />

@@ -77,28 +77,28 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
   const currentTexts = texts[language];
 
   return (
-    <div id="contact">
+    <div id="contact" className="flex flex-col mx-4 items-center">
       <div className="mt-20 mb-10">
         <DecryptedText
           text={`< ${currentTexts.contactMe} />`}
           speed={60}
           maxIterations={20}
           sequential={true}
-          className="text-white text-5xl font-bold "
-          encryptedClassName="text-5xl font-bold text-blue-500 "
+          className="text-white text-4xl font-bold md:text-6xl "
+          encryptedClassName="text-4xl font-bold text-blue-500 md:text-6xl "
           animateOn="view"
           revealDirection="start"
         />
       </div>
 
       <motion.div
-        className="max-w-4xl mx-auto bg-[#121212]/90 p-8 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8"
+        className="max-w-4xl mx-auto justify-center bg-[#121212]/90 p-8 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="flex flex-col justify-around items-center text-white">
-          <h2 className="text-3xl font-bold text-white mb-6">
+        <div className="flex flex-col justify-around items-center text-white gap-2">
+          <h2 className="text-2xl font-bold text-white mb-6 md:text-3xl">
             {currentTexts.contactMe}
           </h2>
           <p className="text-white mb-4">{currentTexts.info_contact}</p>
@@ -126,11 +126,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
             >
               <i className="fa-brands fa-linkedin text-gray-50 text-4xl"></i>
             </a>
-            <a
-              href={whatsapp}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={whatsapp} target="_blank" rel="noreferrer">
               <i className="fa-brands fa-square-whatsapp text-gray-50 text-4xl"></i>
             </a>
           </div>
@@ -140,7 +136,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
             onSubmit={handleSubmit}
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
-            <div className="col-span-1 text-left">
+            <div className="col-span-2 text-left md:col-span-1">
               <label
                 className="block text-white text-sm font-bold mb-2"
                 htmlFor="firstName"
@@ -156,7 +152,7 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
                 required
               />
             </div>
-            <div className="col-span-1 text-left">
+            <div className="col-span-2 text-left md:col-span-1">
               <label
                 className="block text-white text-sm font-bold mb-2"
                 htmlFor="lastName"
@@ -207,12 +203,20 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
             <div className="col-span-2 flex w-full">
               <button
                 type="submit"
-                className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline w-full flex items-center justify-center transition-all duration-300 ease-in-out"
+                className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline w-full flex items-center justify-center transition-all duration-300 ease-in-out cursor-pointer"
               >
-                <span className={`transition-opacity duration-300 ${isSubmitted ? "hidden opacity-0" : "opacity-100"}`}>
+                <span
+                  className={`transition-opacity duration-300 ${
+                    isSubmitted ? "hidden opacity-0" : "opacity-100"
+                  }`}
+                >
                   {currentTexts.send}
                 </span>
-                <span className={`transition-opacity duration-300 flex items-start justify-center ${isSubmitted ? "opacity-100" : "opacity-0"}`}>
+                <span
+                  className={`transition-opacity duration-300 flex items-start justify-center ${
+                    isSubmitted ? "opacity-100" : "opacity-0"
+                  }`}
+                >
                   <i className="fa-solid fa-circle-check text-white text-lg"></i>
                 </span>
               </button>
