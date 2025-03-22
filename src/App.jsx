@@ -51,13 +51,13 @@ function App() {
           {/* Div principal */}
           <div className={`flex flex-col items-center ${isMobile ? "order-2" : "order-1"}`}>
             {!isMobile && <Navbar language={language} setLanguage={setLanguage} isMobile={isMobile} />}
-            <div className="flex items-center justify-center mt-10">
+            <div className="flex items-center justify-center mt-1 sm:mt-10">
               <About language={language} />
             </div>
           </div>
 
           {/* Div del Lanyard */}
-          <div className={`flex flex-col items-start justify-center h-full relative ${isMobile ? "order-1" : "order-2"}`}>
+          <div className={`flex flex-col items-start justify-start h-full relative ${isMobile ? "order-1" : "order-2"}`}>
             {isMobile && (
               <div className="absolute top-0 left-0 w-full z-20">
                 <Navbar language={language} setLanguage={setLanguage} isMobile={isMobile} />

@@ -28,8 +28,8 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
         speed={60}
         maxIterations={20}
         sequential={true}
-        className="text-white text-5xl font-bold "
-        encryptedClassName="text-5xl font-bold text-blue-500 "
+        className="text-white text-4xl font-bold sm:text-5xl "
+        encryptedClassName="text-4xl font-bold text-blue-500 sm:text-5xl "
         animateOn="view"
         revealDirection="start"
       />

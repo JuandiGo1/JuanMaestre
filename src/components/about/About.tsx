@@ -29,14 +29,14 @@ const About: React.FC<{ language: "english" | "spanish" }> = ({ language }) => {
 
   return (
     <div className="text-white font-medium p-8 flex flex-col justify-between items-center">
-      <div className="mt-10 mb-10 ">
+      <div className="mt-1 mb-10 sm:mt-10 ">
         <DecryptedText
           text={currentTitles.greeting}
           speed={80}
           maxIterations={20}
           sequential={true}
-          className="revealed text-6xl font-bold"
-          encryptedClassName="text-6xl font-bold text-blue-500"
+          className="revealed text-5xl font-bold sm:text-6xl"
+          encryptedClassName="text-5xl font-bold text-blue-500 sm:text-6xl"
           animateOn="view"
           revealDirection="start"
         />
@@ -85,7 +85,7 @@ const About: React.FC<{ language: "english" | "spanish" }> = ({ language }) => {
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-4xl font-bold mb-4">{`< ${currentTitles.aboutMe} />`}</h1>
-        <p className="text-[1.125rem] m-4">{profile.description}</p>
+        <p className="text-[15px]  m-4 sm:text-center sm:text-[1.125rem]">{profile.description}</p>
       </motion.div>
 
     </div>
