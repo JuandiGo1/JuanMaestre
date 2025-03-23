@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import "./App.css";
 import Particles from "./components/Particles/Particles";
 import Navbar from "./components/navbar/navbar";
-import About from "./components/About/About";
+import About from "./components/about/About";
 
 const Lanyard = lazy(() => import("./components/Lanyard/Lanyard"));
 const Details = lazy(() => import("./components/About/Details"));
@@ -73,7 +73,7 @@ function App() {
             <div ref={aboutRef}>
               {aboutInView && (
                 <div className="flex items-center justify-center mt-1 sm:mt-10">
-                  
+
                   <About language={language} />
                 </div>
               )}
