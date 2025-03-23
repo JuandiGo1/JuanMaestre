@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef  } from "react";
 function Navbar({ language, setLanguage, isMobile }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para el menú hamburguesa
-  const usaURL = "src/assets/eng.png";
-  const spainURL = "src/assets/spain.png";
+  const usaURL = "/assets/eng.png";
+  const spainURL = "/assets/spain.png";
 
   const dropdownRef = useRef(null); // Referencia al contenedor del selector de idiomas
 

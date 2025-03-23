@@ -104,13 +104,13 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
           </h2>
           <div className="flex justify-center items-center gap-10 text-2xl text-left">
             <LanguageCard
-              flagUrl="src\assets\colombia.png"
+              flagUrl="/assets/colombia.png"
               language={language === "english" ? "Spanish" : "Español"}
               level={languages.spanish}
             />
 
             <LanguageCard
-              flagUrl="src\assets\eng.png"
+              flagUrl="/assets/eng.png"
               language={language === "english" ? "English" : "Inglés"}
               level={languages.english}
             />
