@@ -23,7 +23,7 @@ const Card_Certification: React.FC<CardCertificationProps> = ({
       <p className="text-xl font-semibold text-left">{name}</p>
       <p className="text-lg">{issuer}</p>
       <p className="text-sm">{date}</p>
-      <div className=" bg-white  rounded-full border-2 text-gray-700 p-2  text-sm font-semibold shadow-2xl hover:text-blue-500 mt-2">
+      <div className=" bg-white  rounded-full border-2 text-gray-700 p-2 text-[12px] sm:text-sm font-semibold shadow-2xl hover:text-blue-500 mt-2">
         <a
           href={credentialURL}
           className="mx-2 items-center"
@@ -31,7 +31,7 @@ const Card_Certification: React.FC<CardCertificationProps> = ({
           rel="noopener noreferrer"
         >
           {language === "english" ? "View Certification" : "Ver Certificado"}
-          <i className="fa-solid fa-arrow-up-right-from-square text-sm mx-2"></i>
+          <i className="fa-solid fa-arrow-up-right-from-square text-[12px] sm:text-sm mx-2"></i>
         </a>
       </div>
       <a href={credentialURL}></a>

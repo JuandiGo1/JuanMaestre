@@ -10,12 +10,14 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
+
+
 const fondo = (
   <div className="absolute top-0 right-0 left-0 bottom-0 w-full h-full z-0">
     <Particles
       particleColors={["#ffffff", "#0967e1"]}
       particleCount={800}
-      particleSpread={10}
+      particleSpread={5}
       speed={0.1}
       particleBaseSize={210}
       moveParticlesOnHover={false}
@@ -28,11 +30,14 @@ const fondo = (
 function App() {
   const [language, setLanguage] = useState("english");
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isTablet, setIsTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 960 );
+
 
   // Detectar cambios en el tamaño de la pantalla
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 960);
     };
 
     window.addEventListener("resize", handleResize);
@@ -47,23 +52,33 @@ function App() {
     <div className="relative min-h-screen bg-gradient-to-r from-[#000000] to-[#1b1b1b] overflow-hidden">
       {fondo}
       <div className="relative z-10">
+      {isTablet && (
+        <div className="absolute top-0 left-0 w-full z-20">
+          <Navbar language={language} setLanguage={setLanguage} isMobile={isTablet} />
+        </div>
+        
+        )}
         <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
           {/* Div principal */}
-          <div className={`flex flex-col items-center ${isMobile ? "order-2" : "order-1"}`}>
-            {!isMobile && <Navbar language={language} setLanguage={setLanguage} isMobile={isMobile} />}
+          <div className={`flex flex-col items-center order-2 md:order-1 `}>
+            {!isMobile && !isTablet && <Navbar language={language} setLanguage={setLanguage} isMobile={isMobile} />}
             <div className="flex items-center justify-center mt-1 sm:mt-10">
               <About language={language} />
             </div>
           </div>
 
           {/* Div del Lanyard */}
-          <div className={`flex flex-col items-start justify-start h-full relative ${isMobile ? "order-1" : "order-2"}`}>
+          <div className={`flex flex-col items-start justify-start h-full relative order-1 md:order-2 `}>
             {isMobile && (
               <div className="absolute top-0 left-0 w-full z-20">
                 <Navbar language={language} setLanguage={setLanguage} isMobile={isMobile} />
               </div>
             )}
-            <Lanyard position={isMobile ? [0, 0, 14] : [0, 0, 11]} gravity={[0, -40, 0]} fov={20} />
+            <Lanyard
+              position={isMobile ? [0, 0, 14] : isTablet ? [0, 0, 16] : [0, 0, 11]}
+              gravity={[0, -40, 0]}
+              fov={isTablet? 23: 20}
+            />
           </div>
         </div>
 

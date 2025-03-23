@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef  } from "react";
 
 function Navbar({ language, setLanguage, isMobile }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -6,10 +6,27 @@ function Navbar({ language, setLanguage, isMobile }) {
   const usaURL = "src/assets/eng.png";
   const spainURL = "src/assets/spain.png";
 
+  const dropdownRef = useRef(null); // Referencia al contenedor del selector de idiomas
+
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
     setIsDropdownOpen(false); // Cierra el menú desplegable
   };
+
+   // Cierra el selector de idiomas al hacer clic fuera
+   useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const navItems = {
     english: {
@@ -35,8 +52,8 @@ function Navbar({ language, setLanguage, isMobile }) {
   const items = navItems[language];
 
   return (
-    <nav className="bg-[#0a3d80] px-8 w-full text-xs font-semibold rounded-b-3xl sm:bg-[#0967e1]/50 sm:rounded-b-none sm:rounded-br-2xl sm:text-base sm:font-medium">
-      <div className="flex justify-between items-center h-[60px]">
+    <nav className="max-[960px]:bg-[#0a3d80] px-8 sm:px-2 w-full text-xs font-semibold rounded-b-4xl lg:bg-[#0967e1]/50 lg:rounded-b-none lg:rounded-br-4xl sm:text-base md:font-medium">
+      <div className="flex justify-between lg:justify-evenly items-center h-[60px]">
         {/* Hamburguesa */}
         <button
           className="sm:hidden text-white focus:outline-none cursor-pointer"
@@ -47,6 +64,7 @@ function Navbar({ language, setLanguage, isMobile }) {
 
         {/* Menú de navegación */}
         <ul
+          ref={dropdownRef}
           className={`${
             menuMovilClass
           } flex-col absolute top-[40px] left-5 sm:flex sm:flex-row sm:static sm:gap-8 sm:w-auto sm:opacity-100 sm:max-h-full`}
@@ -86,7 +104,7 @@ function Navbar({ language, setLanguage, isMobile }) {
         </ul>
 
         {/* Selector de idioma */}
-        <div className="relative ml-4">
+        <div ref={dropdownRef} className="relative ml-4 ">
           <button
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             className="bg-gray-700/80 text-white w-16 py-1 px-2 rounded-xl flex items-center gap-2 sm:py-2 sm:px-4 sm:w-auto"
@@ -105,7 +123,7 @@ function Navbar({ language, setLanguage, isMobile }) {
               : "Español"}
           </button>
           {isDropdownOpen && (
-            <div className="absolute top-10 left-0 bg-gray-800 justify-start pr-4 text-white rounded-lg shadow-lg">
+            <div className="absolute top-10 left-0 bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden w-full">
               <button
                 onClick={() => handleLanguageChange("english")}
                 className="flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-700"
@@ -115,7 +133,7 @@ function Navbar({ language, setLanguage, isMobile }) {
               </button>
               <button
                 onClick={() => handleLanguageChange("spanish")}
-                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 w-full text-left"
+                className="flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-700"
               >
                 <img src={spainURL} alt="Español" className="w-5 h-5" />
                 {isMobile ? "ES" : "Español"}

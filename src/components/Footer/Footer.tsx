@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div className="flex justify-center md:justify-start">
-            <img src="public/logo.png" alt="Logo" className="w-60" />
+            <img src="/logo.png" alt="Logo" className="w-60" />
           </div>
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-lg font-bold mb-2">Navigation</h2>

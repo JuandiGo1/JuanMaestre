@@ -17,8 +17,8 @@ const Card_Education: React.FC<CardEducationProps> = ({
   return (
     <Card imageUrl={imageUrl} altText={institution} initialX={-50}>
       <p className="text-xl text-left font-semibold">{degree}</p>
-      <p className="text-lg">{institution}</p>
-      <p className="text-sm">{period}</p>
+      <p className="text-lg text-left">{institution}</p>
+      <p className="text-sm text-left">{period}</p>
     </Card>
   );
 };
