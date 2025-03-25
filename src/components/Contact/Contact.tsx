@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import info from "../../info.json";
 import { motion } from "framer-motion";
 import DecryptedText from "../DecryptedText/DecryptedText";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC<{ language: "english" | "spanish" }> = ({
   language,
@@ -19,12 +21,24 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Mostrar notificación de "Sending email"
+    toast.info("Sending email...", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      className: "custom-toast", // Clase personalizada para estilos
+    });
+
     const templateParams = {
       firstName,
       lastName,
       email,
       message,
-      to_email: info.contact.email, // Reemplaza con tu dirección de correo electrónico
+      to_email: info.contact.email,
     };
 
     emailjs
@@ -44,12 +58,57 @@ const Contact: React.FC<{ language: "english" | "spanish" }> = ({
           setMessage("");
           setIsSubmitted(true); // Actualizar el estado de envío
           setTimeout(() => setIsSubmitted(false), 3000); // Restablecer el estado después de 3 segundos
+
+          // Mostrar notificación de éxito
+          toast.success("Email sent successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            className: "custom-toast",
+          });
         },
         (error) => {
           console.log("FAILED...", error);
+
+          // Mostrar notificación de error
+          toast.error("Failed to send email. Please try again.", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            className: "custom-toast",
+          });
         }
       );
   };
+
+  const sendingEmail = (event: React.MouseEvent, text: string) => {
+      event.preventDefault();
+      navigator.clipboard.writeText(text).then(
+        () => {
+          toast.success("Email copied to clipboard!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            className: "custom-toast", // Añade una clase personalizada
+          });
+        },
+        (err) => {
+          console.error("Could not copy text: ", err);
+        }
+      );
+    };
 
   const texts = {
     english: {
