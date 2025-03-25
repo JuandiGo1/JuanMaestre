@@ -87,13 +87,13 @@ function App() {
                 <Navbar language={language} setLanguage={setLanguage} isMobile={isMobile} />
               </div>
             )}
-            <Suspense fallback={<div className="text-white text-center mt-10">Loading Lanyard...</div>}>
+            
               <Lanyard
                 position={isMobile ? [0, 0, 14] : isTablet ? [0, 0, 16] : [0, 0, 11]}
                 gravity={[0, -40, 0]}
                 fov={isTablet ? 23 : 20}
               />
-            </Suspense>
+
           </div>
         </div>
 
