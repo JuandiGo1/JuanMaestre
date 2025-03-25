@@ -122,7 +122,7 @@ function App() {
               gravity={[0, -40, 0]}
               fov={isTablet ? 23 : 20}
               interactive={!isMobile} // Deshabilitar interacción en móvil
-            />
+            /> 
           </div>
         </div>
 
