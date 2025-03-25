@@ -13,14 +13,14 @@ const About: React.FC<{ language: "english" | "spanish" }> = ({ language }) => {
       aboutMe: "About me",
       technologies: "Technologies",
       greeting: "Hi! I'm Juan Maestre",
-      cv_route: "public/CV Juan Maestre English.pdf",
+      cv_route: "/cv/CV_Juan_Maestre_English.pdf",
       downloadCV: "Download CV",
     },
     spanish: {
       aboutMe: "Sobre mí",
       technologies: "Tecnologías que uso",
       greeting: "Hola! Soy Juan Maestre",
-      cv_route: "public/Juan Maestre CV Spanish.pdf",
+      cv_route: "/cv/Juan_Maestre_CV_Spanish.pdf",
       downloadCV: "Descargar HV",
     },
   };
