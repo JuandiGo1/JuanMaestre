@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef  } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function Navbar({ language, setLanguage, isMobile }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para el menú hamburguesa
+  const [shouldClose, setShouldClose] = useState(false); // Estado para manejar el cierre
   const usaURL = "/assets/eng.png";
   const spainURL = "/assets/spain.png";
 
@@ -13,12 +14,12 @@ function Navbar({ language, setLanguage, isMobile }) {
     setIsDropdownOpen(false); // Cierra el menú desplegable
   };
 
-   // Cierra el selector de idiomas al hacer clic fuera
-   useEffect(() => {
+  // Cierra el selector de idiomas o el menú hamburguesa al hacer clic fuera
+  useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsDropdownOpen(false);
-        setIsMenuOpen(false);
+        setShouldClose(true); // Marca que el menú debe cerrarse
       }
     };
 
@@ -27,6 +28,14 @@ function Navbar({ language, setLanguage, isMobile }) {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  // Efecto para cerrar el menú cuando `shouldClose` es true
+  useEffect(() => {
+    if (shouldClose) {
+      setIsMenuOpen(false); // Cierra el menú hamburguesa
+      setShouldClose(false); // Resetea el estado
+    }
+  }, [shouldClose]);
 
   const navItems = {
     english: {
@@ -57,7 +66,10 @@ function Navbar({ language, setLanguage, isMobile }) {
         {/* Hamburguesa */}
         <button
           className="sm:hidden text-white focus:outline-none cursor-pointer"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={(e) => {
+            setIsMenuOpen(!isMenuOpen); // Alterna el estado del menú
+            setShouldClose(false); // Resetea el estado de cierre
+          }}
         >
           <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"} text-2xl`}></i>
         </button>

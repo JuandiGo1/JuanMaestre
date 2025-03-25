@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-lg font-bold mb-2">Navigation</h2>
             <ul>
-              <li className="mb-1"><a href="#home" className="hover:underline">Home</a></li>
+              <li className="mb-1"><a href="#" className="hover:underline">Home</a></li>
               <li className="mb-1"><a href="#about" className="hover:underline">About</a></li>
               <li className="mb-1"><a href="#skills" className="hover:underline">Skills</a></li>
               <li className="mb-1"><a href="#projects" className="hover:underline">Projects</a></li>
