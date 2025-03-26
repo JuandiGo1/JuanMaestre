@@ -146,7 +146,7 @@
       {"name": "SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"}
     ],
     "frameworks_and_tools": [
-      {"name": "Express.js", "logo": "https://cdn.simpleicons.org/express"},
+      {"name": "Express.js", "logo": "https://icon.icepanel.io/Technology/png-shadow-512/Express.png"},
       {"name": "React", "logo": "https://cdn.simpleicons.org/react"},
       {"name": "SQL Server", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"},
       {"name": "Oracle SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"},
@@ -197,13 +197,13 @@
         "name": "Sabiduría DB",
         "description": "Web app for an academic institution. Designed the database model and developed the corresponding script.",
         "repository": "https://github.com/JuandiGo1/Sabiduria-DB",
-        "image": "https://github.com/user-attachments/assets/73602845-ada2-48c8-b3b7-4475d7291182"
+        "image": "https://github.com/user-attachments/assets/5ee3d7f6-ea71-4b76-82e0-01752dd321e2"
       },
       "spanish": {
         "name": "Sabiduría DB",
         "description": "Aplicación web para una institución académica. Diseñé el modelo de base de datos y desarrollé el script correspondiente.",
         "repository": "https://github.com/JuandiGo1/Sabiduria-DB",
-        "image": "https://github.com/user-attachments/assets/73602845-ada2-48c8-b3b7-4475d7291182"
+        "image": "https://github.com/user-attachments/assets/5ee3d7f6-ea71-4b76-82e0-01752dd321e2"
       }
     },
     {
