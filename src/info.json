@@ -143,39 +143,58 @@
       {"name": "CSS", "logo": "https://cdn.simpleicons.org/css3"},
       {"name": "Python", "logo": "https://cdn.simpleicons.org/python"},
       {"name": "Java", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg"},
-      {"name": "SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"}
+      {"name": "SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"},
+      {"name": "Dart", "logo": "https://cdn.simpleicons.org/dart"}
+
     ],
     "frameworks_and_tools": [
+      {"name": "Flutter", "logo": "https://cdn.simpleicons.org/flutter"},
+      {"name": "Node Js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"},
       {"name": "Express.js", "logo": "https://icon.icepanel.io/Technology/png-shadow-512/Express.png"},
       {"name": "React", "logo": "https://cdn.simpleicons.org/react"},
       {"name": "SQL Server", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"},
       {"name": "Oracle SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"},
       {"name": "Git", "logo": "https://cdn.simpleicons.org/git"},
+      {"name": "MongoDB", "logo": "https://cdn.simpleicons.org/mongodb"},
+      {"name": "Tailwind CSS", "logo": "https://cdn.simpleicons.org/tailwindcss"},
       {"name": "Vercel", "logo": "https://cdn.simpleicons.org/vercel"},
       {"name": "Excel", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019–present%29.svg/1200px-Microsoft_Office_Excel_%282019–present%29.svg.png"},
-      {"name": "Power BI", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png"},
-      {"name": "MongoDB", "logo": "https://cdn.simpleicons.org/mongodb"},
-      {"name": "Tailwind CSS", "logo": "https://cdn.simpleicons.org/tailwindcss"}
+      {"name": "Power BI", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png"}
+      
     ],
     "soft_skills": ["Leadership", "Adaptability", "Problem-solving", "Communication"]
   },
   "languages": {
     "spanish": "Native",
-    "english": "B2"
+    "english": "B1"
   },
   "projects": [
     {
       "english": {
         "name": "Rubik’s Race Solver",
-        "description": "Web app that solves the Rubik’s Race game. Developed the frontend, integrated the backend, and handled the deployment.",
+        "description": "Web application that solves the Rubik’s Race game. I developed the border and backend server with Flask, integrated the backend and took care of the deployment.",
         "repository": "https://rubik-race.vercel.app",
         "image": "https://github.com/user-attachments/assets/75adcc5d-67ad-4662-8e7f-4e04de615032"
       },
       "spanish": {
         "name": "Solucionador de Rubik’s Race",
-        "description": "Aplicación web que resuelve el juego Rubik’s Race. Desarrollé el frontend, integré el backend y me encargué del despliegue.",
+        "description": "Aplicación web que resuelve el juego Rubik’s Race. Desarrollé el frontend y servidor backend con flask, integré el backend y me encargué del despliegue.",
         "repository": "https://rubik-race.vercel.app",
         "image": "https://github.com/user-attachments/assets/75adcc5d-67ad-4662-8e7f-4e04de615032"
+      }
+    },
+    {
+      "english": {
+        "name": "TaskyRM API",
+        "description": "API REST for the TASKYRM app, developed with node.js, Express and Mongodb. It allows to manage tasks with JWT authentication and storage in Mongodb Atlas.",
+        "repository": "https://github.com/JuandiGo1/TaskyRM_Backend",
+        "image": "https://github.com/user-attachments/assets/82b53cff-f034-44a4-882d-b1928a55e0f1"
+      },
+      "spanish": {
+        "name": "TaskyRM API",
+        "description": "API REST para la app TaskyRM, desarrollada con Node.js, Express y MongoDB. Permite gestionar tareas con autenticación JWT y almacenamiento en MongoDB Atlas.",
+        "repository": "https://github.com/JuandiGo1/TaskyRM_Backend",
+        "image": "https://github.com/user-attachments/assets/82b53cff-f034-44a4-882d-b1928a55e0f1"
       }
     },
     {
@@ -194,14 +213,28 @@
     },
     {
       "english": {
+        "name": "ConfHub",
+        "description": "ConfHub is a Flutter-powered app for discovering, exploring, and subscribing to events and conferences, following a clean architecture. I designed and developed the app's homepage.",
+        "repository": "https://github.com/JuandiGo1/Confhub.git",
+        "image": "https://github.com/user-attachments/assets/4f667f72-4713-4250-a399-f486fd3e3210"
+      },
+      "spanish": {
+        "name": "ConfHub",
+        "description": "ConfHub es una app desarrollada con Flutter para descubrir, explorar y suscribirse a eventos y conferencias, siguiendo una arquitectura limpia. Diseñé y desarrollé la pagina principal de la app.",
+        "repository": "https://github.com/JuandiGo1/Confhub.git",
+        "image": "https://github.com/user-attachments/assets/4f667f72-4713-4250-a399-f486fd3e3210"
+      }
+    },
+    {
+      "english": {
         "name": "Sabiduría DB",
-        "description": "Web app for an academic institution. Designed the database model and developed the corresponding script.",
+        "description": "Web app for an academic institution. Designed the database model and developed the corresponding script in SQLite..",
         "repository": "https://github.com/JuandiGo1/Sabiduria-DB",
         "image": "https://github.com/user-attachments/assets/5ee3d7f6-ea71-4b76-82e0-01752dd321e2"
       },
       "spanish": {
         "name": "Sabiduría DB",
-        "description": "Aplicación web para una institución académica. Diseñé el modelo de base de datos y desarrollé el script correspondiente.",
+        "description": "Aplicación web para una institución académica. Diseñé el modelo de base de datos y desarrollé el script correspondiente en SQLite.",
         "repository": "https://github.com/JuandiGo1/Sabiduria-DB",
         "image": "https://github.com/user-attachments/assets/5ee3d7f6-ea71-4b76-82e0-01752dd321e2"
       }
@@ -220,6 +253,7 @@
         "image": "https://github.com/user-attachments/assets/533211ff-8a37-443d-aa89-8611dddad1e9"
       }
     }
+    
     
   ]
 }

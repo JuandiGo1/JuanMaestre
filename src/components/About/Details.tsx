@@ -68,7 +68,7 @@ const Details: React.FC<{ language: "english" | "spanish" }> = ({
           {info.certifications.length > 2 && (
             <button
               onClick={() => setShowAllCertifications(!showAllCertifications)}
-              className="text-blue-500 text-lg hover:underline mt-4"
+              className="text-blue-500 text-lg hover:underline mt-4 cursor-pointer"
             >
               {showAllCertifications
                 ? language === "english"

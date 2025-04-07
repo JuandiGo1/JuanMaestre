@@ -66,7 +66,7 @@ function Navbar({ language, setLanguage, isMobile }) {
         {/* Hamburguesa */}
         <button
           className="sm:hidden text-white focus:outline-none cursor-pointer"
-          onClick={(e) => {
+          onClick={() => {
             setIsMenuOpen(!isMenuOpen); // Alterna el estado del menú
             setShouldClose(false); // Resetea el estado de cierre
           }}
@@ -119,7 +119,7 @@ function Navbar({ language, setLanguage, isMobile }) {
         <div ref={dropdownRef} className="relative ml-4 ">
           <button
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            className="bg-gray-700/80 text-white w-16 py-1 px-2 rounded-xl flex items-center gap-2 sm:py-2 sm:px-4 sm:w-auto"
+            className="bg-gray-700/80 text-white w-16 py-1 px-2 rounded-xl flex items-center gap-2 sm:py-2 sm:px-4 sm:w-auto cursor-pointer"
           >
             <img
               src={language === "english" ? usaURL : spainURL}
@@ -138,14 +138,14 @@ function Navbar({ language, setLanguage, isMobile }) {
             <div className="absolute top-10 left-0 bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden w-full">
               <button
                 onClick={() => handleLanguageChange("english")}
-                className="flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-700"
+                className="flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-700 cursor-pointer"
               >
                 <img src={usaURL} alt="English" className="w-5 h-5" />
                 {isMobile ? "EN" : "English"}
               </button>
               <button
                 onClick={() => handleLanguageChange("spanish")}
-                className="flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-700"
+                className="flex items-center gap-2 px-4 py-2 w-full text-left hover:bg-gray-700 cursor-pointer"
               >
                 <img src={spainURL} alt="Español" className="w-5 h-5" />
                 {isMobile ? "ES" : "Español"}
