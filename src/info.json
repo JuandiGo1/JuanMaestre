@@ -171,6 +171,34 @@
   "projects": [
     {
       "english": {
+        "name": "MiOpenLab",
+        "description": "MiOpenLab is a React + Firebase app for sharing and exploring academic projects. It supports authentication, Markdown, likes, followers, notifications, and dark mode.",
+        "repository": "https://mi-openlab.vercel.app",
+        "image": "https://github.com/user-attachments/assets/b9fb11d0-80ac-42a6-a29f-1b9d7da44893"
+      },
+      "spanish": {
+        "name": "MiOpenLab",
+        "description": "MiOpenLab es una app React + Firebase para compartir y explorar proyectos académicos. Soporta autenticación, markdown, likes, seguidores, notificaciones y dark mode.",
+        "repository": "https://mi-openlab.vercel.app",
+        "image": "https://github.com/user-attachments/assets/b9fb11d0-80ac-42a6-a29f-1b9d7da44893"
+      }
+    },
+    {
+      "english": {
+        "name": "ShortyUrl",
+        "description": "ShortyURL is an app developed with React + Vite, Express, and MySQL. It is a tool for shortening links and viewing usage statistics, with a modern and responsive design.",
+        "repository": "https://shorty-url-web.vercel.app/",
+        "image": "https://github.com/user-attachments/assets/5fd91bbc-b772-43f8-9c1f-8c1c5ae2c50c"
+      },
+      "spanish": {
+        "name": "ShortyUrl",
+        "description": "ShortyURL es una app desarrollada con React + Vite, Express y MySQL, es una herramienta para acortar enlaces y ver estadísticas de uso, con diseño moderno y responsive.",
+        "repository": "https://shorty-url-web.vercel.app/",
+        "image": "https://github.com/user-attachments/assets/5fd91bbc-b772-43f8-9c1f-8c1c5ae2c50c"
+      }
+    },
+    {
+      "english": {
         "name": "Rubik’s Race Solver",
         "description": "Web application that solves the Rubik’s Race game. I developed the border and backend server with Flask, integrated the backend and took care of the deployment.",
         "repository": "https://rubik-race.vercel.app",
@@ -216,13 +244,13 @@
         "name": "ConfHub",
         "description": "ConfHub is a Flutter-powered app for discovering, exploring, and subscribing to events and conferences, following a clean architecture. I designed and developed the app's homepage.",
         "repository": "https://github.com/JuandiGo1/Confhub.git",
-        "image": "https://github.com/user-attachments/assets/4f667f72-4713-4250-a399-f486fd3e3210"
+        "image": "https://github.com/user-attachments/assets/14ee2d11-70fe-4b90-8261-63d0b533887b"
       },
       "spanish": {
         "name": "ConfHub",
         "description": "ConfHub es una app desarrollada con Flutter para descubrir, explorar y suscribirse a eventos y conferencias, siguiendo una arquitectura limpia. Diseñé y desarrollé la pagina principal de la app.",
         "repository": "https://github.com/JuandiGo1/Confhub.git",
-        "image": "https://github.com/user-attachments/assets/4f667f72-4713-4250-a399-f486fd3e3210"
+        "image": "https://github.com/user-attachments/assets/14ee2d11-70fe-4b90-8261-63d0b533887b"
       }
     },
     {
